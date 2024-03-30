@@ -42,7 +42,7 @@ const updateExchangeRate = async () => {
   let data = await response.json();
   let rate = data.conversion_rates[toCurr.value];
 
-  let finalAmount = amtVal * rate;
+  let finalAmount = (amtVal * rate).toFixed(2);
   msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
 };
 
