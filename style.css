@@ -19,7 +19,7 @@
     padding: 3rem;
     border-radius: 2rem;
     min-height: 65vh;
-    width: 100vh;
+    width: 100vw;
   }
 
   .heading {
@@ -33,11 +33,10 @@
   }
 
   hr {
-    color: #fff;
-    border-top: 0.1rem solid black;
-	  width: 22rem;
-    margin-left: 11rem;
-    margin-top: 2rem;
+    border-top: 1px solid black;
+    width: 40%;
+    margin: 2rem;
+    margin-left: 12rem;
   }
   
   .container {
@@ -45,11 +44,9 @@
     background-color: #e2dde9;
     align-items: center;
     padding: 2rem;
-    margin-top: 2rem;
-    margin-left: 4rem;
     border-radius: 1rem;
     min-height: 35vh;
-    width: 75vh;
+    width: 75vw;
     font-size: 1.5rem;
   }
   
@@ -105,12 +102,10 @@
   
   .msg {
     position: fixed;
-    bottom: 5rem;
     font-size: 3rem;
     color: #fff;
     font-family: 'Amiri', serif;
     margin-left: 12rem;
-    margin-bottom: 2.5rem;
   }
   
   form button {
@@ -120,4 +115,31 @@
     color: #fff;
     font-size: 1.15rem;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      align-items: center;
+    }
+
+  .heading {
+    font-size: 36px;
+    margin-left: 2rem;
+  }
+
+  hr {
+		width: 60%;
+    margin: 1rem;
+    margin-left: 5rem;
+	}
+
+  form {
+    margin: 2rem 0 1rem 0;
+  }
+
+  .msg {
+    font-size: 30px;
+    margin-left: 4rem;
+    margin-bottom: 5rem;
+  }
   }
