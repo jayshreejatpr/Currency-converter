@@ -19,7 +19,7 @@
     padding: 3rem;
     border-radius: 2rem;
     min-height: 65vh;
-    width: 100vw;
+    width: 55vw;
   }
 
   .heading {
@@ -28,15 +28,15 @@
     position: fixed;
     top: 5rem;
     font-size: 3rem;
-    margin-left: 9rem;
     padding-top: 1rem;
+    margin-left: 14rem;
   }
 
   hr {
     border-top: 1px solid black;
-    width: 40%;
+    width: 20vw;
     margin: 2rem;
-    margin-left: 12rem;
+    margin-left: 16rem;
   }
   
   .container {
@@ -46,7 +46,7 @@
     padding: 2rem;
     border-radius: 1rem;
     min-height: 35vh;
-    width: 75vw;
+    width: 50vw;
     font-size: 1.5rem;
   }
   
@@ -105,7 +105,7 @@
     font-size: 3rem;
     color: #fff;
     font-family: 'Amiri', serif;
-    margin-left: 12rem;
+    margin-left: 15rem;
   }
   
   form button {
@@ -118,28 +118,41 @@
   }
 
   @media screen and (max-width: 600px) {
-    .container {
+    body{
+      display: flex;
+      justify-content: center;
       align-items: center;
     }
-
   .heading {
-    font-size: 36px;
-    margin-left: 2rem;
+    position: absolute;
+    font-size: 30px;
+    margin-left: 0rem;
   }
 
   hr {
 		width: 60%;
     margin: 1rem;
-    margin-left: 5rem;
+    margin-left: 4rem;
 	}
 
-  form {
-    margin: 2rem 0 1rem 0;
+  .container {
+    width: 10rem;
+    padding-top: 0.5rem;
+  }
+
+  .dropdown{
+    display: flex;
+    flex-direction: column;
+  }
+
+  form button{
+    margin-top: 2rem;
   }
 
   .msg {
-    font-size: 30px;
-    margin-left: 4rem;
-    margin-bottom: 5rem;
+    position: absolute;
+    font-size: 25px;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
   }
   }
