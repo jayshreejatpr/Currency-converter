@@ -17,6 +17,7 @@
   .contain {
     background-color: #8a788a87;
     padding: 3rem;
+    padding-top: 0%;
     border-radius: 2rem;
     min-height: 65vh;
     width: 55vw;
@@ -25,18 +26,15 @@
   .heading {
     font-family: 'pacifico';
     color: #fff;
-    position: fixed;
-    top: 5rem;
     font-size: 3rem;
-    padding-top: 1rem;
-    margin-left: 14rem;
+    text-align: center;
   }
 
   hr {
     border-top: 1px solid black;
     width: 20vw;
-    margin: 2rem;
-    margin-left: 16rem;
+    margin: auto;
+    margin-bottom: 1rem;
   }
   
   .container {
@@ -101,11 +99,12 @@
   }
   
   .msg {
-    position: fixed;
     font-size: 3rem;
+    font-weight: bold;
     color: #fff;
-    font-family: 'Amiri', serif;
-    margin-left: 15rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
   }
   
   form button {
@@ -123,6 +122,7 @@
       justify-content: center;
       align-items: center;
     }
+
   .heading {
     position: absolute;
     font-size: 30px;
@@ -131,13 +131,18 @@
 
   hr {
 		width: 60%;
-    margin: 1rem;
-    margin-left: 4rem;
+    margin-top: 4rem;
 	}
+
+  .contain {
+    min-height: 7em;
+  }
 
   .container {
     width: 10rem;
     padding-top: 0.5rem;
+    margin-top: 1rem;
+    min-height: 5em;
   }
 
   .dropdown{
@@ -152,7 +157,5 @@
   .msg {
     position: absolute;
     font-size: 25px;
-    margin-left: 0.5rem;
-    margin-top: 0.5rem;
   }
   }
